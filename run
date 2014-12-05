@@ -1,0 +1,7 @@
+#!/bin/bash
+FILES="./tests/*"
+for f in $FILES
+do
+    echo -e "\nProcessing $f"
+    ./shell $f
+done

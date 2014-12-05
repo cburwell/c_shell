@@ -1,0 +1,1 @@
+quit ; ls -l ; ls -a ; ls

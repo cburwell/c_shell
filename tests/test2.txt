@@ -1,0 +1,3 @@
+ls -l
+ls -l ; cat file
+ls -l ; cat file ; grep foo file2

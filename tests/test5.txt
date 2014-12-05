@@ -1,0 +1,4 @@
+ls 
+ls
+quit
+ls -al
