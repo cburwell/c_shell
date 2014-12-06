@@ -8,7 +8,6 @@
 
 #define INTER_MODE 0
 #define BATCH_MODE 1
-#define FORK_ERR -1
 #define BUFF_LEN 1024
 
 extern int errno;
@@ -108,7 +107,7 @@ void proccmd(char *line, int *fd, int mode)
 
 int pollreader(int in)
 {
-    char buff[1024];
+    char buff[BUFF_LEN];
     int eStat = EXIT_FAILURE;
 
     // check if quit was written
@@ -178,7 +177,7 @@ int main(int argc, char *argv[])
     // batchfile mode
     else {
         FILE *batch = fopen(argv[1], "r");
-        char bytes[1024];
+        char bytes[BUFF_LEN];
 
         if (batch == NULL) {
             fprintf(stderr, "Error: Unable to open file\n%s\n", strerror(errno));
