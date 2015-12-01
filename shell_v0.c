@@ -171,7 +171,7 @@ int main(int argc, char *argv[])
                 }
             }
             else
-                printf("Dafuq, how did you make that null\n");
+                printf("How did you make that null\n");
         } 
     }
     // batchfile mode
